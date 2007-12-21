@@ -11,6 +11,7 @@ Source0: http://heanet.dl.sourceforge.net/sourceforge/freetennis/%{name}-%{versi
 License: GPL
 Group: Games/Sports
 Url: http://freetennis.sourceforge.net/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: ocaml-lablgl
 BuildRequires: ocaml-lablgl-devel
 BuildRequires: ocaml-SDL-devel
