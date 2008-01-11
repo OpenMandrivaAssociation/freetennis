@@ -46,14 +46,15 @@ EOF
 chmod 0755 $RPM_BUILD_ROOT%_bindir/%name
 
 # install menu entry
-install -d %buildroot/%_menudir
-cat <<EOF > %buildroot/%_menudir/%name
-?package(%name): needs=X11 \
-section="More Applications/Games/Sports" \
-title="Free Tennis" \
-longtitle="Tennis game" \
-command="freetennis -realistic" \
-icon="sport_section.png"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%name.desktop
+[Desktop Entry]
+Type=Application
+Categories=Game;SportsGame;
+Name=Free Tennis
+Comment=Tennis game
+Exec=freetennis -realistic
+Icon=sport_section
 EOF
 
 %post
@@ -70,5 +71,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc web-site/manual.html AUTHORS
 %_bindir/*
 %_libdir/%name
-%_menudir/%name
+%{_datadir}/applications/mandriva-%name.desktop
 
