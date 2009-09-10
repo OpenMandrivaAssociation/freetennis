@@ -1,6 +1,6 @@
 %define name freetennis
 %define version 0.4.8
-%define release %mkrel 2
+%define release %mkrel 3
 
 Summary: A free tennis simulation
 Name: %{name}
