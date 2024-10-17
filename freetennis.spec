@@ -10,7 +10,7 @@ Source0: http://heanet.dl.sourceforge.net/sourceforge/freetennis/%{name}-%{versi
 #Patch0: freetennis-0.1-version.patch.bz2
 License: GPL
 Group: Games/Sports
-Url: http://freetennis.sourceforge.net/
+Url: https://freetennis.sourceforge.net/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: ocaml-lablgl
 BuildRequires: ocaml-lablgl-devel
