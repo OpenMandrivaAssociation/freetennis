@@ -12,6 +12,7 @@ License: GPL
 Group: Games/Sports
 Url: https://freetennis.sourceforge.net/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	make
 BuildRequires: ocaml-lablgl
 BuildRequires: ocaml-lablgl-devel
 BuildRequires: ocaml-SDL-devel
